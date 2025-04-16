@@ -50,3 +50,33 @@
     border-radius: 50%;
     border: 3px solid white;
 }
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff4c68;
+}
+
+.stories, .highlights {
+  margin: 20px;
+}
+
+.story-items, .highlight-items {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.story-img, .highlight img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.highlight {
+  text-align: center;
+}

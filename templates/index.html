@@ -5,7 +5,37 @@
     <title>EditxArfoo</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body<div class="post">
+<body<!-- Profile Section -->
+<div class="profile">
+  <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+  <h2>EditxArfoo</h2>
+</div>
+
+<!-- Story Section -->
+<div class="stories">
+  <h3>Stories</h3>
+  <div class="story-items">
+    <img src="{{ url_for('static', filename='images/story1.jpg') }}" alt="Story 1" class="story-img">
+    <img src="{{ url_for('static', filename='images/story2.jpg') }}" alt="Story 2" class="story-img">
+    <img src="{{ url_for('static', filename='images/story3.jpg') }}" alt="Story 3" class="story-img">
+  </div>
+</div>
+
+<!-- Highlight Section -->
+<div class="highlights">
+  <h3>Highlights</h3>
+  <div class="highlight-items">
+    <div class="highlight">
+      <img src="{{ url_for('static', filename='images/highlight1.jpg') }}" alt="Highlight 1">
+      <p>Gaming</p>
+    </div>
+    <div class="highlight">
+      <img src="{{ url_for('static', filename='images/highlight2.jpg') }}" alt="Highlight 2">
+      <p>Travel</p>
+    </div>
+  </div>
+</div>
+<div class="post">
   <img src="{{ url_for('static', filename='images/sample.jpg') }}" alt="Sample Post" class="post-img">
   <div class="actions">
     <button onclick="likePost()">Like</button>
