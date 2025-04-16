@@ -5,7 +5,18 @@
     <title>EditxArfoo</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+<body<div class="post">
+  <img src="{{ url_for('static', filename='images/sample.jpg') }}" alt="Sample Post" class="post-img">
+  <div class="actions">
+    <button onclick="likePost()">Like</button>
+    <span id="like-count">0</span> Likes
+  </div>
+  <div class="comments">
+    <input type="text" id="comment-input" placeholder="Add a comment...">
+    <button onclick="addComment()">Post</button>
+    <ul id="comment-list"></ul>
+  </div>
+</div>>
     <div class="profile-container">
 <div class="post-feed">
 
@@ -35,5 +46,25 @@
         <h1>@EditxArfoo</h1>
         <p>Welcome to my official page. I'm a gamer, developer, and social media enthusiast.</p>
     </div>
+<script>
+  let likeCount = 0;
+
+  function likePost() {
+    likeCount++;
+    document.getElementById("like-count").innerText = likeCount;
+  }
+
+  function addComment() {
+    let commentInput = document.getElementById("comment-input");
+    let commentText = commentInput.value;
+    if (commentText.trim() !== "") {
+      let commentList = document.getElementById("comment-list");
+      let newComment = document.createElement("li");
+      newComment.innerText = commentText;
+      commentList.appendChild(newComment);
+      commentInput.value = "";
+    }
+  }
+</script>
 </body>
 </html>
