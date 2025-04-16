@@ -1,4 +1,37 @@
-body {
+.post-feed {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+}
+
+.post {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.post-media {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions button {
+    background: #333;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+}body {
     background-color: #111;
     color: white;
     font-family: Arial, sans-serif;

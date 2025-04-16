@@ -7,6 +7,30 @@
 </head>
 <body>
     <div class="profile-container">
+<div class="post-feed">
+
+    <!-- Image Post -->
+    <div class="post">
+        <img src="{{ url_for('static', filename='images/post1.jpg') }}" class="post-media" alt="Post Image">
+        <div class="actions">
+            <button>❤️ Like</button>
+            <button>💬 Comment</button>
+        </div>
+    </div>
+
+    <!-- Video Post -->
+    <div class="post">
+        <video controls class="post-media">
+            <source src="{{ url_for('static', filename='videos/post1.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="actions">
+            <button>❤️ Like</button>
+            <button>💬 Comment</button>
+        </div>
+    </div>
+
+</div>
         <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic" alt="Profile Picture">
         <h1>@EditxArfoo</h1>
         <p>Welcome to my official page. I'm a gamer, developer, and social media enthusiast.</p>
