@@ -99,3 +99,13 @@
 .social-links a:hover {
   background-color: #ff4c68;
 }
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #00bfff;
+}
+
